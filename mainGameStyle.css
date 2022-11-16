@@ -1,0 +1,393 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto/Roboto-Regular.ttf);
+  }
+
+body{
+    margin: 0;
+}
+
+.background{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 1920px;
+    height: 1000px;
+}
+
+#scoreBoard{
+position: absolute;
+width: 200px;
+height: 80px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 5px 8px 9px rgba(0, 0, 0, 0.43);
+border-radius: 0px 0px 20px 0px;
+}
+
+.scoreBoardText{
+    color: #361157;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0px 30px 50px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.scoreBoardText2{
+    color: #361157;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin: 40px 20px 30px 25px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+#time{
+    position: absolute;
+    width: 1000px;
+    height: 20px;
+    margin: 23px 0px 0px 450px;
+    background-color:#8E44AD;
+    border-radius: 10px;
+    animation-name: timeAnimation;
+    animation-duration: 60s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+#greyTime{
+    position: absolute;
+    width: 1000px;
+    height: 20px;
+    margin: 23px 0px 0px 450px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+@keyframes timeAnimation{
+    0% {width: 0;}
+    50% {width: 500px;}
+    100% {width: 1000px;}
+}
+
+nav > div{
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    top: 0px;
+    left: 1820px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 8px 9px rgba(0, 0, 0, 0.43);
+    border-radius: 0px 0px 0px 20px;
+}
+
+#restart{
+    position: absolute;
+    margin: 15px 0 0 20px;
+}
+
+section > div{
+    position: absolute;
+    width: 1250px;
+    height: 800px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 8px 9px rgba(0, 0, 0, 0.43);
+    border-radius: 10px;
+    margin: 122px 308px 78px 302px;
+    opacity: 90%;
+}
+
+#firstCardFirstRow[type="checkbox"]{
+    display: none;
+}
+
+#firstCardLabel{
+    margin: 65px 0px 0px 65px;
+}
+
+.cardStyle{
+    position: absolute;
+	width: 149px;
+	height: 194px;
+	cursor: pointer;	
+	background-image: url(images/Card_Hover\ 10.png);
+    padding: 0;
+    border: none;
+    transition: all 1.2s;
+    transform-style: preserve-3d;
+    backface-visibility:hidden;
+}
+
+#firstCardFirstRow[type="checkbox"]:checked + #firstCardLabel {
+	background-image: url(images/Card_Hover\ 22.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#secondCardFirstRow[type="checkbox"]{
+    display: none;
+}
+
+#secondCardLabel{
+    margin: 65px 0px 0px 259px;
+}
+
+
+#secondCardFirstRow[type="checkbox"]:checked + #secondCardLabel {
+	background-image: url(images/Card_Hover\ 31.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#thirdCardFirstRow[type="checkbox"]{
+    display: none;
+}
+
+#thirdCardLabel{
+    margin: 65px 0px 0px 454px;
+}
+
+
+#thirdCardFirstRow[type="checkbox"]:checked + #thirdCardLabel {
+	background-image: url(images/Card_Hover\ 29.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#fourthCardFirstRow[type="checkbox"]{
+    display: none;
+}
+
+#fourthCardLabel{
+    margin: 65px 0px 0px 648px;
+}
+
+
+#fourthCardFirstRow[type="checkbox"]:checked + #fourthCardLabel {
+	background-image: url(images/Card_Hover\ 28.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#fifthCardFirstRow[type="checkbox"]{
+    display: none;
+}
+
+#fifthCardLabel{
+    margin: 65px 0px 0px 842px;
+}
+
+
+#fifthCardFirstRow[type="checkbox"]:checked + #fifthCardLabel {
+	background-image: url(images/Card_Hover\ 30.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#sixthCardFirstRow[type="checkbox"]{
+    display: none;
+}
+
+#sixthCardLabel{
+    margin: 65px 0px 0px 1036px;
+}
+
+
+#sixthCardFirstRow[type="checkbox"]:checked + #sixthCardLabel {
+	background-image: url(images/Card_Hover\ 23.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#firstCardSecondRow[type="checkbox"]{
+    display: none;
+}
+
+#firstCardSecondRowLabel{
+    margin: 310px 0px 0px 65px;
+}
+
+
+#firstCardSecondRow[type="checkbox"]:checked + #firstCardSecondRowLabel {
+	background-image: url(images/Card_Hover\ 26.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#secondCardSecondRow[type="checkbox"]{
+    display: none;
+}
+
+#secondCardSecondRowLabel{
+    margin: 310px 0px 0px 259px;
+}
+
+
+#secondCardSecondRow[type="checkbox"]:checked + #secondCardSecondRowLabel {
+	background-image: url(images/Card_Hover\ 25.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#thirdCardSecondRow[type="checkbox"]{
+    display: none;
+}
+
+#thirdCardSecondRowLabel{
+    margin: 310px 0px 0px 454px;
+}
+
+
+#thirdCardSecondRow[type="checkbox"]:checked + #thirdCardSecondRowLabel {
+	background-image: url(images/Card_Hover\ 24.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#fourthCardSecondRow[type="checkbox"]{
+    display: none;
+}
+
+#fourthCardSecondRowLabel{
+    margin: 310px 0px 0px 648px;
+}
+
+
+#fourthCardSecondRow[type="checkbox"]:checked + #fourthCardSecondRowLabel {
+	background-image: url(images/Card_Hover\ 22.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#fifthCardSecondRow[type="checkbox"]{
+    display: none;
+}
+
+#fifthCardSecondRowLabel{
+    margin: 310px 0px 0px 842px;
+}
+
+
+#fifthCardSecondRow[type="checkbox"]:checked + #fifthCardSecondRowLabel {
+	background-image: url(images/Card_Hover\ 23.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#sixthCardSecondRow[type="checkbox"]{
+    display: none;
+}
+
+#sixthCardSecondRowLabel{
+    margin: 310px 0px 0px 1036px;
+}
+
+
+#sixthCardSecondRow[type="checkbox"]:checked + #sixthCardSecondRowLabel {
+	background-image: url(images/Card_Hover\ 24.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#firstCardThirdRow[type="checkbox"]{
+    display: none;
+}
+
+#firstCardThirdRowLabel{
+    margin: 555px 0px 0px 65px;
+}
+
+
+#firstCardThirdRow[type="checkbox"]:checked + #firstCardThirdRowLabel {
+	background-image: url(images/Card_Hover\ 25.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#secondCardThirdRow[type="checkbox"]{
+    display: none;
+}
+
+#secondCardThirdRowLabel{
+    margin: 555px 0px 0px 259px;
+}
+
+
+#secondCardThirdRow[type="checkbox"]:checked + #secondCardThirdRowLabel {
+	background-image: url(images/Card_Hover\ 26.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#thirdCardThirdRow[type="checkbox"]{
+    display: none;
+}
+
+#thirdCardThirdRowLabel{
+    margin: 555px 0px 0px 454px;
+}
+
+
+#thirdCardThirdRow[type="checkbox"]:checked + #thirdCardThirdRowLabel {
+	background-image: url(images/Card_Hover\ 31.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#fourthCardThirdRow[type="checkbox"]{
+    display: none;
+}
+
+#fourthCardThirdRowLabel{
+    margin: 555px 0px 0px 648px;
+}
+
+
+#fourthCardThirdRow[type="checkbox"]:checked + #fourthCardThirdRowLabel {
+	background-image: url(images/Card_Hover\ 30.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#fifthCardThirdRow[type="checkbox"]{
+    display: none;
+}
+
+#fifthCardThirdRowLabel{
+    margin: 555px 0px 0px 842px;
+}
+
+
+#fifthCardThirdRow[type="checkbox"]:checked + #fifthCardThirdRowLabel {
+	background-image: url(images/Card_Hover\ 29.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
+
+#sixthCardThirdRow[type="checkbox"]{
+    display: none;
+}
+
+#sixthCardThirdRowLabel{
+    margin: 555px 0px 0px 1036px;
+}
+
+
+#sixthCardThirdRow[type="checkbox"]:checked + #sixthCardThirdRowLabel {
+	background-image: url(images/Card_Hover\ 28.png);
+    transform: rotateY(360deg);
+    backface-visibility:hidden;
+}
